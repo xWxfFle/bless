@@ -1,3 +1,10 @@
+import { Text } from '@mantine/core'
+import { LayoutBase } from '@/layouts/base'
+
 export const HomePage = () => {
-  return <div>Home</div>
+  return (
+    <LayoutBase>
+      <Text>Home page</Text>
+    </LayoutBase>
+  )
 }

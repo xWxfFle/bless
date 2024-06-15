@@ -1,10 +1,10 @@
 import { Text } from '@mantine/core'
 import { LayoutBase } from '@/layouts/base'
 
-export const SignInPage = () => {
+export const TasksPage = () => {
   return (
-    <LayoutBase showFooter={false}>
-      <Text>Sign in page</Text>
+    <LayoutBase>
+      <Text>Tasks page</Text>
     </LayoutBase>
   )
 }

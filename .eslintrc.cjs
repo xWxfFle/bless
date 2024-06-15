@@ -10,4 +10,14 @@ module.exports = configure({
     presets.typescript(),
     presets.react(),
   ],
+  extend: {
+    env: {
+      node: true,
+      browser: true,
+    },
+    ignorePatterns: ['src/shared/api/gql'],
+    rules: {
+      '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+    },
+  },
 })

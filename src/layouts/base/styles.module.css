@@ -1,0 +1,15 @@
+.activeLink {
+  color: var(--mantine-color-text);
+  height: 35px;
+  &:visited {
+    color: var(--mantine-color-text);
+  }
+}
+
+.inactiveLink {
+  color: var(--mantine-color-dimmed);
+  height: 35px;
+  &:visited {
+    color: var(--mantine-color-dimmed);
+  }
+}
