@@ -4,7 +4,10 @@ import { LayoutBase } from '@/layouts/base'
 export const TasksPage = () => {
   return (
     <LayoutBase>
-      <Text>Tasks page</Text>
+      <Text>Tasks</Text>
+      <Text size="xs" c="purple" mt="xs">
+        Get rewards
+      </Text>
     </LayoutBase>
   )
 }

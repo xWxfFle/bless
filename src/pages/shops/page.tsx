@@ -1,12 +1,12 @@
 import { Text } from '@mantine/core'
 import { LayoutBase } from '@/layouts/base'
 
-export const InventoryPage = () => {
+export const ShopsPage = () => {
   return (
     <LayoutBase>
-      <Text>Inventory</Text>
+      <Text>Shops</Text>
       <Text size="xs" c="purple" mt="xs">
-        Manage your items
+        Buy items
       </Text>
     </LayoutBase>
   )

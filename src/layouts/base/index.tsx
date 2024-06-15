@@ -3,6 +3,7 @@ import {
   IconGiftFilled,
   IconHomeFilled,
   IconLayoutListFilled,
+  IconShoppingCartFilled,
   IconUserFilled,
 } from '@tabler/icons-react'
 import { Link } from 'atomic-router-react'
@@ -12,8 +13,9 @@ import classes from './styles.module.css'
 
 const navigationItems = [
   { title: 'Tasks', to: routes.tasks, Icon: IconLayoutListFilled },
-  { title: 'Home', to: routes.home, Icon: IconHomeFilled },
   { title: 'Friends', to: routes.friends, Icon: IconGiftFilled },
+  { title: 'Home', to: routes.home, Icon: IconHomeFilled },
+  { title: 'Shops', to: routes.shops, Icon: IconShoppingCartFilled },
   { title: 'Inventory', to: routes.inventory, Icon: IconUserFilled },
 ]
 
@@ -57,7 +59,11 @@ export const LayoutBase = ({
         <Container
           size="xs"
           pt="md"
-          style={{ display: 'flex', justifyContent: 'center' }}
+          display="flex"
+          style={{
+            alignItems: 'center',
+            flexDirection: 'column',
+          }}
         >
           {children}
         </Container>

@@ -24,6 +24,13 @@ const theme = createTheme({
   colors: {
     purple,
   },
+  components: {
+    Card: {
+      defaultProps: {
+        p: 'sm',
+      },
+    },
+  },
 })
 
 export const App = () => {
