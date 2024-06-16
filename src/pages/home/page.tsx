@@ -49,7 +49,7 @@ const Boost = () => {
   return (
     <Box pos="relative" w="100%">
       <Button
-        mt="xl"
+        mt="lg"
         ref={ref}
         p={0}
         style={{ borderRadius: '100%' }}
@@ -94,11 +94,11 @@ export const HomePage = () => {
           </Flex>
         </Card>
       </Flex>
-      <Flex gap="xs" align="center" mt="xl">
+      <Flex gap="xs" align="center" mt="lg">
         <Image src="/boost-winged.svg" pb={7} />
         <Text size="xl">{formattedCounter}</Text>
       </Flex>
-      <Flex gap="xs" align="center" mt="xl" w="100%">
+      <Flex gap="xs" align="center" mt="lg" w="100%">
         <Progress radius="xl" size="xl" value={counter / 100} flex={1} />
         <IconShirtFilled size={30} />
       </Flex>
