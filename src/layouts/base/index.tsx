@@ -54,11 +54,15 @@ export const LayoutBase = ({
   showFooter?: boolean
 }) => {
   return (
-    <AppShell footer={{ height: showFooter ? 76 : 0 }} layout="alt">
+    <AppShell
+      footer={{ height: showFooter ? 76 : 0 }}
+      layout="alt"
+      padding="xl"
+    >
       <AppShell.Main>
         <Container
           size="xs"
-          pt="md"
+          px={0}
           display="flex"
           style={{
             alignItems: 'center',

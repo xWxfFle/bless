@@ -18,13 +18,17 @@
     "atomic-router": "^0.10.1",
     "atomic-router-react": "^0.10.0",
     "effector": "^23.2.2",
+    "effector-react": "^23.2.1",
+    "framer-motion": "^11.2.10",
     "patronum": "^2.2.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "wretch": "^2.9.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
+    "@types/telegram-web-app": "^7.2.1",
     "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8.57.0",
     "eslint-kit": "^10.31.1",
