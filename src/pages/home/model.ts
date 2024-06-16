@@ -29,5 +29,5 @@ export const $formattedCounter = $counter.map((counter) => {
   if (result.endsWith('.00')) {
     result = result.slice(0, Math.max(0, result.length - 3))
   }
-  return result + 'k'.repeat(k)
+  return result + 'K'.repeat(k)
 })

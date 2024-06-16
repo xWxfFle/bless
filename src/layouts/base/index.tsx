@@ -55,7 +55,7 @@ export const LayoutBase = ({
 }) => {
   return (
     <AppShell
-      footer={{ height: showFooter ? 76 : 0 }}
+      footer={{ height: showFooter ? 55 : 0 }}
       layout="alt"
       padding="lg"
     >

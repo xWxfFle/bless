@@ -22,9 +22,9 @@ import {
 } from './model'
 
 type FlyingLabel = {
-  id: number
+  id: string
   value: number
-  left: number
+  inset: string
   initialY: number
 }
 const Boost = () => {
@@ -38,9 +38,9 @@ const Boost = () => {
     setFlyingLabels((prev) => [
       ...prev,
       {
-        id: prev.length,
+        id: Math.random().toString(36).slice(2, 10),
         initialY: 0,
-        left: Math.random() * width,
+        inset: 10 + Math.random() * (70 - 10) + '%',
         value: increaseBy,
       },
     ])
@@ -52,26 +52,32 @@ const Boost = () => {
         mt="lg"
         ref={ref}
         p={0}
-        style={{ borderRadius: '100%' }}
+        variant="outline"
+        style={{
+          borderRadius: '100%',
+          borderWidth: 6,
+          boxShadow: '0 2px 20px var(--mantine-color-grape-outline)',
+        }}
         h={rem(width)}
         onClick={handleClick}
         fullWidth
       >
         MR.BLESS
       </Button>
-      {flyingLabels.map(({ id, initialY, left, value }) => (
+      {flyingLabels.map(({ id, initialY, inset, value }) => (
         <motion.div
           key={id}
           initial={{ y: initialY, opacity: 1 }}
           animate={{ y: -100, opacity: 0 }}
+          onClick={handleClick}
           transition={{ duration: 1 }}
           onAnimationComplete={() =>
             setFlyingLabels((prev) => prev.filter((label) => label.id !== id))
           }
           style={{
             position: 'absolute',
-            left,
-            top: 10,
+            zIndex: 1,
+            inset,
           }}
         >
           +{value}

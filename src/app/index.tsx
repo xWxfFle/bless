@@ -19,7 +19,7 @@ const purple: MantineColorsTuple = [
 
 const theme = createTheme({
   fontFamily: '"Press Start 2P", system-ui',
-  primaryColor: 'purple',
+  primaryColor: 'grape',
   defaultRadius: 'md',
   colors: {
     purple,
