@@ -5,9 +5,6 @@ export const ShopsPage = () => {
   return (
     <LayoutBase>
       <Text>Shops</Text>
-      <Text size="xs" c="purple" mt="xs">
-        Buy items
-      </Text>
     </LayoutBase>
   )
 }

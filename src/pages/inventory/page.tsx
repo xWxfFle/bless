@@ -5,9 +5,6 @@ export const InventoryPage = () => {
   return (
     <LayoutBase>
       <Text>Inventory</Text>
-      <Text size="xs" c="purple" mt="xs">
-        Manage your items
-      </Text>
     </LayoutBase>
   )
 }

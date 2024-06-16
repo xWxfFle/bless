@@ -91,20 +91,18 @@ export const HomePage = () => {
   const [counter, formattedCounter] = useUnit([$counter, $formattedCounter])
   return (
     <LayoutBase>
-      <Flex justify="flex-end" gap="md" w="100%">
-        <Card radius="xl">
-          <Flex align="flex-end" gap="xs">
-            <Text>+</Text>
-            <Text>8.25K</Text>
-            <Image src="/boost.svg" pb={5} />
-          </Flex>
-        </Card>
-      </Flex>
-      <Flex gap="xs" align="center" mt="lg">
+      <Card radius="xl" ml="auto">
+        <Flex align="flex-end">
+          <Text>+</Text>
+          <Text>8.25K</Text>
+          <Image src="/boost.svg" pb={5} />
+        </Flex>
+      </Card>
+      <Flex align="center" mt="lg">
         <Image src="/boost-winged.svg" pb={7} />
         <Text size="xl">{formattedCounter}</Text>
       </Flex>
-      <Flex gap="xs" align="center" mt="lg" w="100%">
+      <Flex align="center" mt="lg" w="100%">
         <Progress radius="xl" size="xl" value={counter / 100} flex={1} />
         <IconShirtFilled size={30} />
       </Flex>

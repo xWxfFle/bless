@@ -30,6 +30,16 @@ const theme = createTheme({
         p: 'sm',
       },
     },
+    Flex: {
+      defaultProps: {
+        gap: 'xs',
+      },
+    },
+    Stack: {
+      defaultProps: {
+        gap: 'xs',
+      },
+    },
   },
 })
 
