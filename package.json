@@ -11,6 +11,7 @@
     "lint:fix": "eslint \"src/**/*.{js,mjs,cjs,ts,mts,jsx,tsx}\" --fix"
   },
   "dependencies": {
+    "@farfetched/core": "^0.12.4",
     "@fontsource/press-start-2p": "^5.0.20",
     "@mantine/core": "^7.10.2",
     "@mantine/hooks": "^7.10.2",

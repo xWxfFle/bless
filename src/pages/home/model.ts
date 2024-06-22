@@ -1,7 +1,13 @@
 import { createEvent, createStore, sample } from 'effector'
+import { $$user } from '@/entities/user/model'
 import { routes } from '@/shared/routing'
 
 export const currentRoute = routes.home
+
+sample({
+  clock: currentRoute.opened,
+  target: $$user.query.refresh,
+})
 
 export const counterIncreased = createEvent()
 
